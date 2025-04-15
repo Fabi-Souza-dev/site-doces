@@ -37,7 +37,3 @@ Sim! O site foi projetado para se adaptar a diferentes tamanhos de tela, especia
 ## 📌 Autor
 
 Desenvolvido por **Fabi**, estudante de Análise e Desenvolvimento de Sistemas com paixão por design e programação. 🌸
-
----
-
-Se quiser contribuir ou usar como base para outro projeto, fique à vontade! 💖
