@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor--primaria: #C75B7A;
+    --cor--secundaria: #FFF0F5 ;
+    --cor--tercearia: #921A40;
+    --fonte--primaria: "Cookie", cursive;
+    --fonte--secundaria: 'Poppins', sans-serif;
+}
+
+body {
+    background-color:var(--cor--secundaria) ;
+    /*height: 100vh;*/
+    box-sizing: border-box;
+    align-items: center;
+    background-image: url(''); /* Nome do arquivo da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+
+.cabecalho{
+    padding: 1% 0% 0% 0%;    
+    background-color: var(--cor--primaria);
+    
+}
+
+.cabecalho__menu{
+    display: flex;    
+    gap: 60px;
+    
+}
+
+.cabecalho__menu__link{
+    font-family: var(--fonte--primaria);
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 1%;
+    gap: 10px;
+    color: var(--cor--secundaria);     
+}
+
+.titulo__blog {
+    color: var(--cor--tercearia);
+    padding-top: 2%;
+    font-family:"Henny Penny", system-ui;
+    font-size: 3.12rem;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+.apresentacao{
+    padding: 2% 2% 2% 2%;
+    
+}
+
+.apresentacao__paragrafo__texto{
+    font-size: 1.25rem;
+    font-family: var(--fonte--secundaria);
+}
+
+.apresentacao__links{
+    text-align: center;
+    padding-top: 3%;
+    gap: 10px;
+}
+.titulo__blog__subtitulo{
+    font-family: var(--fonte--primaria);
+    font-weight: 600;
+    color: var(--cor--primaria);
+    font-size: 2.5rem;
+    font-style: italic;    
+}
+
+.titulo__blog__sobre__mim{
+    padding: 2% 2% 2% 2%;
+}
+
+.apresentacao__links__imagem{
+    text-align: center;    
+    width: 1000px;
+    height: auto;
+}
+
+.apresentacao__imagem{
+    width: 50%;
+}
+
+/*.apresentacao{
+    display: flex;
+    justify-content: space-between;
+}*/
+
+.rodape{
+    height: auto;
+    padding: 18px;
+    background-color: var(--cor--primaria);
+    color: var(--cor--secundaria);
+    text-align: center;
+    font-family:var(--fonte--secundaria);
+    font-size: 1.15rem;
+}
+
+
+@media (min-width: 480px ) and (max-width: 768px) {
+    .cabecalho{
+        padding-left: 10%;
+        text-align: center;
+    }
+    .cabecalho__menu__link{
+        text-align: center;
+    }
+
+    .apresentacao{
+        flex-direction: column;
+        padding: 8% 8% 8% 8%;
+        gap: 20px;
+    }
+
+    .apresentacao__paragrafo{
+        gap: 20px;
+    }
+
+    .apresentacao__paragrafo__texto{
+        font-size: 1rem;
+    }
+
+    .titulo__blog__sobre__mim{
+        padding: 2% 2% 2% 2%;
+        font-size: 1.5rem;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .titulo__blog__sobre__mim{
+        padding: 2% 2% 2% 2%;
+    }
+
+    .apresentacao__paragrafo__texto__lista{
+        padding: 5% 5% 5% 5%;
+    }
+
+    .titulo__blog__subtitulo{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .apresentacao__links__imagem{
+        text-align: left;        
+        width: 700px;
+        height: auto;
+    }
+
+    .apresentacao__links{
+        text-align: center;
+        padding-top: 8%;
+        gap: 10px;
+    }
+
+    .apresentacao__informacao{
+        padding: 5% 5% 5% 5%;
+    }
+}
