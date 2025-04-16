@@ -165,12 +165,17 @@ body {
         width: 700px;
         height: auto;
     }
-
+    
     .apresentacao__links{
         text-align: center;
         padding-top: 8%;
         gap: 10px;
     }
+
+    .apresentacao__links__table{
+        padding-left: 30%;
+    }
+
 
     .apresentacao__informacao{
         padding: 5% 5% 5% 5%;
@@ -196,8 +201,18 @@ body {
         text-align: center;
     }
 
+    .apresentacao{
+        padding-left: 5%;
+    }
+
     .apresentacao__informacao{
         padding: 5%;
+    }
+
+    .apresentacao__links{
+        text-align: center;
+        padding-top: 8%;
+        gap: 10px;
     }
 
 }
