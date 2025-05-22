@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt BR">
 
 <head>
     <meta charset="UTF-8">
@@ -10,12 +10,7 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Menu</a>
-            <a class="cabecalho__menu__link" href="sobre.html">Sobre mim</a>
-        </nav>
-    </header>
+    <div id="header"></div>
     <main class="apresentacao">
         <h1 class="titulo__blog">Delícias de Doces!</h1>
         <section>
@@ -42,11 +37,19 @@
                 <img class="apresentacao__links__imagem" src="./assets/chef-de-padaria-sorrindo.jpg.png" alt="">
             </div>
         </section>
-
     </main>
-    <footer class="rodape">
-        <P>Desenvolvido por Fabi</P>
-    </footer>
+    <div id="footer"></div>
+    <script>
+        // Carrega o cabeçalho
+        fetch('./arquivos_html/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        // Carrega o rodapé
+        fetch('./arquivos_html/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
 
 </body>
 

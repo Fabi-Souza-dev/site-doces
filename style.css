@@ -17,40 +17,44 @@
     --fonte--secundaria: 'Poppins', sans-serif;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 body {
-    background-color:var(--cor--secundaria);
+    background-color:var(--cor--secundaria) ;
+    /*height: 100vh;*/
+    box-sizing: border-box;
     align-items: center;
-    background-image: url('');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(''); /* Nome do arquivo da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    overflow-x: hidden;
 }
 
 .cabecalho{
     padding: 1% 0% 0% 0%;    
-    background-color: var(--cor--primaria);    
+    background-color: var(--cor--primaria);
+    
 }
 
 .cabecalho__menu{
     display: flex;    
-    gap: 60px;    
+    gap: 60px;
+    
 }
 
+.cabecalho__menu__imagem{
+    display: flex;    
+    padding: 10% 10% 10% 10%;
+}
 .apresentacao__receita{
     display: flex;
     justify-content: center;
     padding: 2% 6% 2% 6%;
+    width: 50;
 }
 
 .apresentacao__receita__right{
     padding-left: 16%;
 }
-
 .cabecalho__menu__link{
     font-family: var(--fonte--primaria);
     font-size: 1.25rem;
@@ -71,7 +75,8 @@ body {
 }
 
 .apresentacao{
-    padding: 2% 2% 2% 2%;    
+    padding: 2% 2% 2% 2%;
+    
 }
 
 .apresentacao__paragrafo__texto{
@@ -84,7 +89,6 @@ body {
     padding-top: 3%;
     gap: 10px;
 }
-
 .titulo__blog__subtitulo{
     font-family: var(--fonte--primaria);
     font-weight: 600;
@@ -97,16 +101,25 @@ body {
     padding: 2% 2% 2% 2%;
 }
 
-.apresentacao__links__imagem {
-    text-align: center;
-    width: 100%;
-    max-width: 1000px;
+.apresentacao__links__imagem{
+    text-align: center;    
+    width: 1000px;
     height: auto;
 }
 
 .apresentacao__imagem{
-    width: 50%;        
+    width: 50%;
+        
 }
+
+.apresentacao__links__imagem{
+    width: 100%;
+}
+
+/*.apresentacao{
+    display: flex;
+    justify-content: space-between;
+}*/
 
 .rodape{
     height: auto;
@@ -118,29 +131,27 @@ body {
     font-size: 1.15rem;
 }
 
+
 @media (min-width: 480px ) and (max-width: 768px) {
     .apresentacao__receita__right{
         padding-left: 0%;
     }
-
     .apresentacao__receita {
         display: block;
         margin: 0;
         justify-content: initial;
     }
-
     .cabecalho{
         padding-left: 10%;
         text-align: center;
     }
-
     .cabecalho__menu__link{
         text-align: center;
     }
 
     .apresentacao{
         flex-direction: column;
-        padding: 8%;
+        padding: 8% 8% 8% 8%;
         gap: 20px;
     }
 
@@ -153,26 +164,32 @@ body {
     }
 
     .titulo__blog__sobre__mim{
-        padding: 2%;
+        padding: 2% 2% 2% 2%;
         font-size: 1.5rem;
         gap: 20px;
         text-align: center;
     }
 
+    .titulo__blog__sobre__mim{
+        padding: 2% 2% 2% 2%;
+    }
+
     .apresentacao__paragrafo__texto__lista{
-        padding: 5%;
+        padding: 5% 5% 5% 5%;
     }
 
     .titulo__blog__subtitulo{
         font-size: 2rem;
         text-align: center;
     }
-
     .apresentacao__links__imagem{
         text-align: left;        
-        width: 100%;
-        max-width: 700px;
+        width: 700px;
         height: auto;
+    }
+
+    .apresentacao__links__imagem{
+        width: 100%;
     }
     
     .apresentacao__links{
@@ -186,15 +203,16 @@ body {
     }
 
     .apresentacao__informacao{
-        padding: 5%;
+        padding: 5% 5% 5% 5%;
     }
 }
 
-@media (max-width: 390px){
+
+
+@media (max-width: 390px ){
     .apresentacao__receita__right{
         padding-left: 0%;
     }
-
     .apresentacao__receita {
         display: block;
         margin: 0;
@@ -211,7 +229,7 @@ body {
     }
 
     .titulo__blog__sobre__mim{
-        padding: 1%;
+        padding: 1% 1% 1% 1%;
         font-size: 1rem;
         gap: 20px;
         text-align: center;
@@ -230,4 +248,5 @@ body {
         padding-top: 8%;
         gap: 10px;
     }
+
 }
